@@ -1,6 +1,5 @@
 package ru.job4j.calculator;
 
-import calculator.Fit;
 import org.junit.Test;
 import org.junit.Assert;
 
