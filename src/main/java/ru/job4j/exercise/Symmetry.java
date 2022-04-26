@@ -1,27 +1,24 @@
 package ru.job4j.exercise;
 
 public class Symmetry {
-    public static void main(String[] args) {
-        int i = 123221;
+    public static boolean check(int i) {
         String str = Integer.toString(i);
-        System.out.println(str);
-        System.out.println("str.length() / 2 = " + str.length() / 2);
-        for (int j = 0; j < (str.length() / 2); j++) {
-            System.out.println(j);
-            if (str.charAt(i) != str.charAt(str.length() - 1 - i)) {
-                System.out.println("Не симметрично");
+        for (int j = 0; j < str.length() / 2; j++) {
+            if (str.charAt(j) != str.charAt(str.length() - 1 - j)) {
+                return false;
             }
         }
+        return true;
     }
 }
 
 /*
-for (int j = 0; j > (str.length() / 2); j++) {
-            System.out.println(str.charAt(i + 1));
-            System.out.println(str.charAt(str.length() - 1 - i));
-            if (str.charAt(i) == str.charAt(str.length() - 1 - i)) {
-                System.out.println(str.charAt(i));
-                continue;
-            }
-        }
-*/
+1.7. Симметричное число
+Метод принимает целочисленное значение. Необходимо проверить является ли оно симметричным или нет.
+Симметричным считается число которое в котором числа идущие по порядку в прямом и
+обратном порядке равны друг другу.
+Для решения можете преобразовать число в строку. Проходите по полученной строке в цикле,
+до середины и сравниваете символ который стоит на первой позиции  с символом на последней,
+второй позиции с символом на предпоследней и т.д. Для извлечения символов используйте метод charAt().
+Метод должен вернуть true, если число симметричное.
+ */
