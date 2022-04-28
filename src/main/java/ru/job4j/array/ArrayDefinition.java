@@ -3,13 +3,17 @@ package ru.job4j.array;
 public class ArrayDefinition {
 
     public static void main(String[] args) {
-        short[] ages = new short[10];
-        System.out.println("Размер массива равен: " + ages.length);
+        String[] names = new String[4];
 
-        String[] surnames = new String[100500];
-        System.out.println("Размер массива равен: " + surnames.length);
+        names[0] = "dsfgadsfg";
+        names[1] = "dfgfdgh";
+        names[2] = "dfghhjkljhklhjkljhkl";
+        names[3] = "dsfgajhkdsfg";
 
-        float[] places = new float[40];
-        System.out.println("Размер массива равен: " + places.length);
+        System.out.println("names[0] равен: " + names[0]);
+        System.out.println("names[1] равен: " + names[1]);
+        System.out.println("names[2] равен: " + names[2]);
+        System.out.println("names[3] равен: " + names[3]);
+
     }
 }
